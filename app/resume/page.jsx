@@ -1,340 +1,315 @@
 "use client";
 
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
-  FaNodeJs,
+	FaHtml5,
+	FaCss3,
+	FaJs,
+	FaReact,
+	FaFigma,
+	FaNodeJs,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {SiTailwindcss, SiNextdotjs} from "react-icons/si";
 
 // about data
 const about = {
-  title: "About me",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
-  info: [
-    {
-      fieldName: "Name",
-      fieldValue: "Luke Coleman",
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "(+40) 321 654 678",
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "12+ Years",
-    },
-    {
-      fieldName: "Skype",
-      fieldValue: "luke.01",
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "American",
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "luke.01@gmail.com",
-    },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available",
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "English, Spanish",
-    },
-  ],
+	title: "About me",
+	description:
+		"Welcome to my portfolio page! My name is Youri Janssen, and I am a junior software developer currently in" +
+		" my second and final year of the Associate Degree in Software Development at the Amsterdam University of" +
+		" Applied Sciences. Previously, I studied Arts & Economics at HKU, where I completed enrollment but ultimately decided my future lay elsewhere, specifically in programming. My interest in software development blossomed during my final graduation project, where I created a prototype website/webshop for a struggling soccer club alongside a comprehensive business plan. This project introduced me to the world of web development, sparking a passion for programming that led me to enroll at HVA. Today, I consider myself a proficient programmer with a solid grasp of key concepts. I am actively seeking opportunities with a company that values growth and where I can contribute to its success. I am a fast learner and proactive in seeking knowledge through asking questions.",
+	info: [
+		{
+			fieldName: "Name",
+			fieldValue: "Youri Janssen",
+		},
+		{
+			fieldName: "Phone",
+			fieldValue: "(+31) 6 47 22 39 84",
+		},
+		{
+			fieldName: "Experience",
+			fieldValue: "2+ Years",
+		},
+		{
+			fieldName: "Nationality",
+			fieldValue: "Dutch",
+		},
+		{
+			fieldName: "Freelance",
+			fieldValue: "Available",
+		},
+		{
+			fieldName: "Email",
+			fieldValue: "yourijanssen123@gmail.com",
+		},
+		{
+			fieldName: "Languages",
+			fieldValue: "English, Dutch, German",
+		},
+	],
 };
 
 // experience data
 const experience = {
-  icon: "/assets/resume/badge.svg",
-  title: "My experience",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
-  items: [
-    {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "Web Design Studio",
-      position: "Front-End Developer Intern",
-      duration: "Summer 2021",
-    },
-    {
-      company: "E-commerce Startup",
-      position: "Freelance Web Developer",
-      duration: "2020 - 2021",
-    },
-    {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
-    },
-    {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2018 - 2019",
-    },
-    {
-      company: "Software Development Firm",
-      position: "Junior Developer",
-      duration: "2017 - 2018",
-    },
-  ],
+	icon: "/assets/resume/badge.svg",
+	title: "My experience",
+	description:
+		"Here I summed up all the relevant work experiences related to Software Development I've had so far.",
+	items: [
+		{
+			company: "IRP",
+			position: "Full-stack Developer",
+			duration: "December 2023 - Present",
+		},
+	],
 };
 
 // education data
 const education = {
-  icon: "/assets/resume/cap.svg",
-  title: "My education",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
-  items: [
-    {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
-    },
-    {
-      institution: "Codecademy",
-      degree: "Front-end Track",
-      duration: "2022",
-    },
-    {
-      institution: "Online Course",
-      degree: "Programming Course",
-      duration: "2020 - 2021",
-    },
-    {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
-    },
-    {
-      institution: "Design School",
-      degree: "Diploma in Graphic Design",
-      duration: "2016 - 2018",
-    },
-    {
-      institution: "Community College",
-      degree: "Associate Degree in Computer Science",
-      duration: "2014 - 2016",
-    },
-  ],
+	icon: "/assets/resume/cap.svg",
+	title: "My education",
+	description:
+		"Here you can find all the relevant eduction I have done .",
+	items: [
+		{
+			institution: "Online Course Platform",
+			degree: "Full Stack Web Development Bootcamp",
+			duration: "2023",
+		},
+		{
+			institution: "Codecademy",
+			degree: "Front-end Track",
+			duration: "2022",
+		},
+		{
+			institution: "Online Course",
+			degree: "Programming Course",
+			duration: "2020 - 2021",
+		},
+		{
+			institution: "Tech Institute",
+			degree: "Certified Web Developer",
+			duration: "2019",
+		},
+		{
+			institution: "Design School",
+			degree: "Diploma in Graphic Design",
+			duration: "2016 - 2018",
+		},
+		{
+			institution: "Community College",
+			degree: "Associate Degree in Computer Science",
+			duration: "2014 - 2016",
+		},
+	],
 };
 
 // skills data
 const skills = {
-  title: "My skills",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
-  skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "html 5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "css 3",
-    },
-    {
-      icon: <FaJs />,
-      name: "javascript",
-    },
-    {
-      icon: <FaReact />,
-      name: "react.js",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "next.js",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind.css",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "node.js",
-    },
-    {
-      icon: <FaFigma />,
-      name: "figma",
-    },
-  ],
+	title: "My skills",
+	description:
+		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+	skillList: [
+		{
+			icon: <FaHtml5/>,
+			name: "html 5",
+		},
+		{
+			icon: <FaCss3/>,
+			name: "css 3",
+		},
+		{
+			icon: <FaJs/>,
+			name: "javascript",
+		},
+		{
+			icon: <FaReact/>,
+			name: "react.js",
+		},
+		{
+			icon: <SiNextdotjs/>,
+			name: "next.js",
+		},
+		{
+			icon: <SiTailwindcss/>,
+			name: "tailwind.css",
+		},
+		{
+			icon: <FaNodeJs/>,
+			name: "node.js",
+		},
+		{
+			icon: <FaFigma/>,
+			name: "figma",
+		},
+	],
 };
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
 
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { motion } from "framer-motion";
+import {ScrollArea} from "@/components/ui/scroll-area";
+import {motion} from "framer-motion";
 
 const Resume = () => {
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
-      }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
-    >
-      <div className="container mx-auto">
-        <Tabs
-          defaultValue="experience"
-          className="flex flex-col xl:flex-row gap-[60px]"
-        >
-          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
-          </TabsList>
+	return (
+		<motion.div
+			initial={{opacity: 0}}
+			animate={{
+				opacity: 1,
+				transition: {delay: 2.4, duration: 0.4, ease: "easeIn"},
+			}}
+			className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+		>
+			<div className="container mx-auto">
+				<Tabs
+					defaultValue="experience"
+					className="flex flex-col xl:flex-row gap-[60px]"
+				>
+					<TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+						<TabsTrigger value="experience">Experience</TabsTrigger>
+						<TabsTrigger value="education">Education</TabsTrigger>
+						<TabsTrigger value="skills">Skills</TabsTrigger>
+						<TabsTrigger value="about">About me</TabsTrigger>
+					</TabsList>
 
-          {/* content */}
-          <div className="min-h-[70vh] w-full">
-            {/* experience */}
-            <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {experience.description}
-                </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {experience.items.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                            {item.position}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            {/* dot */}
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </ScrollArea>
-              </div>
-            </TabsContent>
+					{/* content */}
+					<div className="min-h-[70vh] w-full">
+						{/* experience */}
+						<TabsContent value="experience" className="w-full">
+							<div className="flex flex-col gap-[30px] text-center xl:text-left">
+								<h3 className="text-4xl font-bold">{experience.title}</h3>
+								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+									{experience.description}
+								</p>
+								<ScrollArea className="h-[400px]">
+									<ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+										{experience.items.map((item, index) => {
+											return (
+												<li
+													key={index}
+													className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+												>
+													<span className="text-accent">{item.duration}</span>
+													<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+														{item.position}
+													</h3>
+													<div className="flex items-center gap-3">
+														{/* dot */}
+														<span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+														<p className="text-white/60">{item.company}</p>
+													</div>
+												</li>
+											);
+										})}
+									</ul>
+								</ScrollArea>
+							</div>
+						</TabsContent>
 
-            {/* education */}
-            <TabsContent value="education" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {education.description}
-                </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {education.items.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                            {item.degree}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            {/* dot */}
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.institution}</p>
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </ScrollArea>
-              </div>
-            </TabsContent>
+						{/* education */}
+						<TabsContent value="education" className="w-full">
+							<div className="flex flex-col gap-[30px] text-center xl:text-left">
+								<h3 className="text-4xl font-bold">{education.title}</h3>
+								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+									{education.description}
+								</p>
+								<ScrollArea className="h-[400px]">
+									<ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+										{education.items.map((item, index) => {
+											return (
+												<li
+													key={index}
+													className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+												>
+													<span className="text-accent">{item.duration}</span>
+													<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+														{item.degree}
+													</h3>
+													<div className="flex items-center gap-3">
+														{/* dot */}
+														<span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+														<p className="text-white/60">{item.institution}</p>
+													</div>
+												</li>
+											);
+										})}
+									</ul>
+								</ScrollArea>
+							</div>
+						</TabsContent>
 
-            {/* skills */}
-            <TabsContent value="skills" className="w-full h-full">
-              <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                  <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                    {skills.description}
-                  </p>
-                </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            </TabsContent>
+						{/* skills */}
+						<TabsContent value="skills" className="w-full h-full">
+							<div className="flex flex-col gap-[30px]">
+								<div className="flex flex-col gap-[30px] text-center xl:text-left">
+									<h3 className="text-4xl font-bold">{skills.title}</h3>
+									<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+										{skills.description}
+									</p>
+								</div>
+								<ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+									{skills.skillList.map((skill, index) => {
+										return (
+											<li key={index}>
+												<TooltipProvider delayDuration={100}>
+													<Tooltip>
+														<TooltipTrigger
+															className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+															<div
+																className="text-6xl group-hover:text-accent transition-all duration-300">
+																{skill.icon}
+															</div>
+														</TooltipTrigger>
+														<TooltipContent>
+															<p className="capitalize">{skill.name}</p>
+														</TooltipContent>
+													</Tooltip>
+												</TooltipProvider>
+											</li>
+										);
+									})}
+								</ul>
+							</div>
+						</TabsContent>
 
-            {/* about */}
-            <TabsContent
-              value="about"
-              className="w-full text-center xl:text-left"
-            >
-              <div className="flex flex-col gap-[30px]">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {about.description}
-                </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-                  {about.info.map((item, index) => {
-                    return (
-                      <li
-                        key={index}
-                        className="flex items-center justify-center xl:justify-start gap-4"
-                      >
-                        <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            </TabsContent>
-          </div>
-        </Tabs>
-      </div>
-    </motion.div>
-  );
+						{/* about */}
+						<TabsContent
+							value="about"
+							className="w-full text-center xl:text-left"
+						>
+							<div className="flex flex-col gap-[30px]">
+								<h3 className="text-4xl font-bold">{about.title}</h3>
+								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+									{about.description}
+								</p>
+								<ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+									{about.info.map((item, index) => {
+										return (
+											<li
+												key={index}
+												className="flex items-center justify-center xl:justify-start gap-4"
+											>
+												<span className="text-white/60">{item.fieldName}</span>
+												<span className="text-xl">{item.fieldValue}</span>
+											</li>
+										);
+									})}
+								</ul>
+							</div>
+						</TabsContent>
+					</div>
+				</Tabs>
+			</div>
+		</motion.div>
+	);
 };
 
 export default Resume;
