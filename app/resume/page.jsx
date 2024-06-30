@@ -7,9 +7,27 @@ import {
 	FaReact,
 	FaFigma,
 	FaNodeJs,
+	FaAngular,
+	FaJava,
+	FaDiceThree,
+	FaNpm,
+	FaRegFilePowerpoint,
+	FaRegFileWord,
+	FaGit,
+	FaGitSquare,
+	FaGithub,
+	FaGitlab, FaFileExcel,
 } from "react-icons/fa";
 
-import {SiTailwindcss, SiNextdotjs} from "react-icons/si";
+import {
+	SiTailwindcss,
+	SiNextdotjs,
+	SiSpringboot,
+	SiSpringsecurity,
+	SiSpring,
+	SiTypescript,
+	SiApachemaven
+} from "react-icons/si";
 
 // about data
 const about = {
@@ -55,11 +73,11 @@ const experience = {
 	icon: "/assets/resume/badge.svg",
 	title: "My experience",
 	description:
-		"Here I summed up all the relevant work experiences related to Software Development I've had so far.",
+		"Here you can find all the relevant work experiences I've had so far.",
 	items: [
 		{
-			company: "IRP",
-			position: "Full-stack Developer",
+			company: "IRP/BIMKeeper: Web-based building management system",
+			position: "Full-stack Developer - Internship",
 			duration: "December 2023 - Present",
 		},
 	],
@@ -70,38 +88,38 @@ const education = {
 	icon: "/assets/resume/cap.svg",
 	title: "My education",
 	description:
-		"Here you can find all the relevant eduction I have done .",
+		"Here you can find all the relevant eduction I've had so far.",
 	items: [
 		{
-			institution: "Online Course Platform",
-			degree: "Full Stack Web Development Bootcamp",
-			duration: "2023",
+			institution: "Amsterdam University of Applied Sciences",
+			degree: "Software Development - Associate Degree",
+			duration: "2022 - 2024",
 		},
 		{
-			institution: "Codecademy",
-			degree: "Front-end Track",
-			duration: "2022",
+			institution: "Utrecht School of the Arts",
+			degree: "Art & Economics - Bachelor of Arts",
+			duration: "2016 - 2021",
+			file: "/assets/HBO Bachelor Kunst en Economie (Art and Economics).pdf",
 		},
 		{
-			institution: "Online Course",
-			degree: "Programming Course",
-			duration: "2020 - 2021",
+			institution: "Utrecht School of the Arts",
+			degree: "Art & Economics - Propaedeutic year",
+			duration: "2017",
+			file: "/assets/HBO Bachelor Kunst en Economie Propedeuse bachelor (Art and Economics).pdf",
 		},
 		{
-			institution: "Tech Institute",
-			degree: "Certified Web Developer",
-			duration: "2019",
+			institution: "College voor Toetsen en Examens",
+			degree: "Voorbereidend wetenschappelijk onderwijs (VWO)",
+			duration: "2015",
+			file: "/assets/Voorbereidend wetenschappelijk onderwijs (staatsexamen).pdf",
 		},
 		{
-			institution: "Design School",
-			degree: "Diploma in Graphic Design",
-			duration: "2016 - 2018",
+			institution: "Scholengemeenschap Oost/Zuidoost",
+			degree: "Hoger algemeen voortgezet onderwijs (HAVO)",
+			duration: "2009 - 2014",
+			file: "/assets/Hoger algemeen voortgezet onderwijs.pdf",
 		},
-		{
-			institution: "Community College",
-			degree: "Associate Degree in Computer Science",
-			duration: "2014 - 2016",
-		},
+
 	],
 };
 
@@ -109,39 +127,128 @@ const education = {
 const skills = {
 	title: "My skills",
 	description:
-		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+		"Here I listed all the relevant skills I've obtained so far, seperated by time periods of 6 months each.",
+	year: "2022",
 	skillList: [
 		{
 			icon: <FaHtml5/>,
 			name: "html 5",
+			year: 2016,
 		},
 		{
 			icon: <FaCss3/>,
 			name: "css 3",
+			year: 2016,
 		},
 		{
 			icon: <FaJs/>,
 			name: "javascript",
+			year: 2016,
+		},
+		{
+			icon: <SiTypescript/>,
+			name: "Typescript",
+			year: 2016,
 		},
 		{
 			icon: <FaReact/>,
 			name: "react.js",
+			year: 2016,
 		},
 		{
 			icon: <SiNextdotjs/>,
 			name: "next.js",
+			year: 2017,
 		},
 		{
 			icon: <SiTailwindcss/>,
 			name: "tailwind.css",
+			year: 2017,
 		},
 		{
 			icon: <FaNodeJs/>,
 			name: "node.js",
+			year: 2017,
 		},
 		{
 			icon: <FaFigma/>,
 			name: "figma",
+			year: 2017,
+		},
+		{
+			icon: <FaAngular/>,
+			name: "angular",
+			year: 2017,
+		},
+		{
+			icon: <FaJava/>,
+			name: "java",
+			year: 2017,
+		},
+		{
+			icon: <SiApachemaven/>,
+			name: "Apache Maven",
+			year: 2017,
+		},
+		{
+			icon: <SiSpring/>,
+			name: "Spring",
+			year: 2017,
+		},
+		{
+			icon: <SiSpringboot/>,
+			name: "Spring Boot",
+			year: 2017,
+		},
+		{
+			icon: <SiSpringsecurity/>,
+			name: "Spring Security",
+			year: 2017,
+		},
+		{
+			icon: <VscVscode/>,
+			name: "VSCode",
+			year: 2018,
+		},
+		{
+			icon: <DiIntellij/>,
+			name: "Intellij",
+			year: 2018,
+		},
+		{
+			icon: <FaNpm/>,
+			name: "NPM",
+			year: 2018,
+		},
+		{
+			icon: <FaGitSquare/>,
+			name: "Git",
+			year: 2018,
+		},
+		{
+			icon: <FaGithub/>,
+			name: "GitHub",
+			year: 2018,
+		},
+		{
+			icon: <FaGitlab/>,
+			name: "GitLab",
+			year: 2018,
+		},
+		{
+			icon: <FaRegFilePowerpoint/>,
+			name: "Powerpoint",
+			year: 2018,
+		},
+		{
+			icon: <FaRegFileWord/>,
+			name: "Word",
+			year: 2018,
+		},
+		{
+			icon: <FaFileExcel/>,
+			name: "Excel",
+			year: 2018,
 		},
 	],
 };
@@ -157,6 +264,10 @@ import {
 
 import {ScrollArea} from "@/components/ui/scroll-area";
 import {motion} from "framer-motion";
+import Downloads, {DegreeDownload, HKUDownload} from "@/components/Downloads";
+import Social from "@/components/Social";
+import {VscVscode} from "react-icons/vsc";
+import {DiIntellij} from "react-icons/di";
 
 const Resume = () => {
 	return (
@@ -227,7 +338,7 @@ const Resume = () => {
 											return (
 												<li
 													key={index}
-													className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+													className="bg-[#232329] h-[300px] py-6 px-10 rounded-xl flex flex-col justify-start items-start lg:items-start gap-1"
 												>
 													<span className="text-accent">{item.duration}</span>
 													<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
@@ -237,6 +348,9 @@ const Resume = () => {
 														{/* dot */}
 														<span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
 														<p className="text-white/60">{item.institution}</p>
+													</div>
+													<div className="flex flex-col xl:flex-row items-center gap-8">
+														<DegreeDownload url={item.file}/>
 													</div>
 												</li>
 											);

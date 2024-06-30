@@ -13,7 +13,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Youri Jassen",
+  title: "Youri Janssen",
   description: "Youri Janssen Portfolio",
 };
 
