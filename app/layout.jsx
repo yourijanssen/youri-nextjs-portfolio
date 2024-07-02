@@ -18,19 +18,41 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata = {
   title: "Youri Janssen",
   description: "Youri Janssen Portfolio Full Stack Developer React Youri YWM Janssen Amsterdam Utrecht Custom" +
-      " Website Building",
+      " Website Building .online .nl",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-    <Analytics/>
-    <SpeedInsights/>
-      <body className={jetbrainsMono.variable}>
-        <Header />
-        <StairTransition />
+      <html lang="en">
+      <head>
+        <meta charSet="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content={metadata.description}/>
+        <title>{metadata.title}</title>
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content={metadata.title}/>
+        <meta property="og:description" content={metadata.description}/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://yourwebsite.com"/>
+        <meta property="og:image" content="https://yourwebsite.com/your-image.jpg"/>
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content={metadata.title}/>
+        <meta name="twitter:description" content={metadata.description}/>
+        <meta name="twitter:image" content="https://yourwebsite.com/your-image.jpg"/>
+
+        <link rel="canonical" href="https://yourwebsite.com"/>
+        <link rel="icon" href="/favicon.ico"/>
+      </head>
+        <Analytics/>
+        <SpeedInsights/>
+        <body className={jetbrainsMono.variable}>
+        <Header/>
+        <StairTransition/>
         <PageTransition>{children}</PageTransition>
-      </body>
-    </html>
-  );
+        </body>
+      </html>
+);
 }
