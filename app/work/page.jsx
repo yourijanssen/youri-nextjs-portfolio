@@ -21,8 +21,25 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
-    num: "01 ",
-    category: "IRP Internship Projects",
+    num: "01",
+    category: "BIM builder tool",
+    title: "",
+    description:
+        " This was my graduation project for the 2 year Software Development study I did. BIM stands for Building" +
+        " Information" +
+        " Modelling. It is a process" +
+        " involving the generation and" +
+        " management of" +
+        " digital representations of the physical and functional characteristics of buildings and other physical" +
+        " assets. I created a tool to make the process of creating one more accessible for the average customer of IRP.",
+    stack: [{ name: "React.js" }, { name: "Tailwind.css" }, { name: "Three.js" }, { name:"Spring" }, { name: "MongoDB" }],
+    image: "/assets/work/bimBuilder.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "02 ",
+    category: "Support Ticket System",
     title: "",
     description:
         "For IRP I created 2 different projects. The first one was a ticketing system that tracks all the errors" +
@@ -30,29 +47,18 @@ const projects = [
         " copyright" +
         " infringement I am not allowed to share any code or live project) ",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "02",
-    category: "School Projects",
-    title: "project 2",
-    description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
+    image: "/assets/work/ticketSystem.png",
     live: "",
     github: "",
   },
   {
     num: "03",
-    category: "Freelance projects",
-    title: "project 3",
+    category: "School and hobby Projects",
+    title: "project 2",
     description:
-        "For myself and a few customers I have created custom portfolio, marketing and e-commerce pages",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-    image: "/assets/work/thumb3.png",
+        "In the first year of my eduction, had to follow several courses to get a grasp of webdevelopment history",
+    stack: [{ name: "HTML 5" }, { name: "CSS" }, { name: "MySql" }, { name: "Node.js" }],
+    image: "/assets/work/avontuurMobile1.png",
     live: "",
     github: "",
   },
@@ -120,7 +126,7 @@ const Work = () => {
                       </Tooltip>
                     </TooltipProvider>
                   </Link>
-                  {/* github project button */}
+                  {/* Github project button */}
                   <Link href={project.github}>
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>

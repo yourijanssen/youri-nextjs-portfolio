@@ -70,8 +70,8 @@ const about = {
 			fieldValue: "Dutch",
 		},
 		{
-			fieldName: "Freelance",
-			fieldValue: "Available",
+			fieldName: "Status",
+			fieldValue: "Student / Freelancing",
 		},
 		{
 			fieldName: "Email",
@@ -167,7 +167,7 @@ const skills = {
 		{
 			icon: <SiPrettier/>,
 			name: "Prettier",
-			year: 2022,
+			year: 2023,
 			link: "https://prettier.io/docs/en/",
 		},
 		{

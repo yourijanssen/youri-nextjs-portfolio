@@ -9,7 +9,7 @@ const CVUrl = '/assets/CV-Youri.pdf';
 const CVDownload= () => {
 	const handleDownload = () => {
 		const anchor = document.createElement('a');
-		anchor.href = pdfUrl;
+		anchor.href = CVUrl;
 		anchor.download = 'CV-Youri.pdf'; // Specify the file name for the download
 		anchor.click();
 	};
