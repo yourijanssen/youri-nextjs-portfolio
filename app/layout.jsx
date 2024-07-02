@@ -34,16 +34,16 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content={metadata.title}/>
         <meta property="og:description" content={metadata.description}/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://yourwebsite.com"/>
-        <meta property="og:image" content="https://yourwebsite.com/your-image.jpg"/>
+        <meta property="og:url" content="https://yourijanssen.online"/>
+        <meta property="og:image" content="assets/profilePic.png"/>
 
         {/* Twitter Card Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:card" content="assets/profilePic.png"/>
         <meta name="twitter:title" content={metadata.title}/>
         <meta name="twitter:description" content={metadata.description}/>
-        <meta name="twitter:image" content="https://yourwebsite.com/your-image.jpg"/>
+        <meta name="twitter:image" content="assets/profilePic.png"/>
 
-        <link rel="canonical" href="https://yourwebsite.com"/>
+        <link rel="canonical" href="https://yourijanssen.online"/>
         <link rel="icon" href="/favicon.ico"/>
       </head>
         <Analytics/>
