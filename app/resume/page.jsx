@@ -49,9 +49,20 @@ import {
 const about = {
 	title: "About me",
 	description:
-		"Welcome to my portfolio page! My name is Youri Janssen, and I am a junior software developer currently in" +
-		" my second and final year of the Associate Degree in Software Development at the Amsterdam University of" +
-		" Applied Sciences. Previously, I studied Arts & Economics at HKU, where I completed enrollment but ultimately decided my future lay elsewhere, specifically in programming. My interest in software development blossomed during my final graduation project, where I created a prototype website/webshop for a struggling soccer club alongside a comprehensive business plan. This project introduced me to the world of web development, sparking a passion for programming that led me to enroll at HVA. Today, I consider myself a proficient programmer with a solid grasp of key concepts. I am actively seeking opportunities with a company that values growth and where I can contribute to its success. I am a fast learner and proactive in seeking knowledge through asking questions.",
+		"Hi! My name is Youri Janssen, and I am a full-stack developer currently finishing up" +
+		" my education at the Amsterdam University of" +
+		" Applied Sciences. Previously, I studied Arts & Economics at HKU, where I completed enrollment but" +
+		" ultimately decided my future lay elsewhere, specifically in programming. My interest in software" +
+		" development has always been there but I failed to recognise this at an early age. During my final" +
+		" graduation project at the HKU, I" +
+		" created" +
+		" a prototype" +
+		" website/webshop for a struggling soccer club alongside a comprehensive business plan. This project" +
+		" introduced me to the world of web development and I decided this was a field of work I'd be interested to" +
+		" work in for the long-term. This led me" +
+		" to enroll at HVA. Today, I" +
+		" consider myself a proficient programmer with a solid grasp of key concepts. I am always actively seeking" +
+		" opportunities in this field!",
 	info: [
 		{
 			fieldName: "Name",
