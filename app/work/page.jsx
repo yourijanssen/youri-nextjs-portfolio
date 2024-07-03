@@ -24,6 +24,7 @@ const projects = [
     num: "01",
     category: "BIM builder tool",
     title: "",
+    icon: "",
     description:
         "This was my graduation project for my two-year Software Development program. BIM, or Building Information" +
         " Modeling, is a process that involves generating and managing digital representations of the physical and" +
