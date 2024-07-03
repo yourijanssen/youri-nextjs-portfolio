@@ -25,14 +25,8 @@ const projects = [
     category: "BIM builder tool",
     title: "",
     description:
-        " This was my graduation project for the 2 year Software Development study I did. BIM stands for Building" +
-        " Information" +
-        " Modelling. It is a process" +
-        " involving the generation and" +
-        " management of" +
-        " digital representations of the physical and functional characteristics of buildings and other physical" +
-        " assets. I created a tool to make the process of creating one more accessible for the average customer of IRP.",
-    stack: [{ name: "React.js" }, { name: "Tailwind.css" }, { name: "Three.js" }, { name:"Spring" }, { name: "MongoDB" }],
+        "This was my graduation project for my two-year Software Development program. BIM, or Building Information Modeling, is a process that involves generating and managing digital representations of the physical and functional characteristics of buildings and other physical assets. I developed a tool to make this process more accessible for the average customer of IRP.",
+    stack: [{ name: "Spring MVC" }, { name: "Tailwind" }, { name: "Three" }, { name:"React" }, { name: "MongoDB" }],
     image: "/assets/work/bimBuilder.png",
     live: "",
     github: "",
@@ -42,26 +36,23 @@ const projects = [
     category: "Support Ticket System",
     title: "",
     description:
-        "For IRP I created 2 different projects. The first one was a ticketing system that tracks all the errors" +
-        " that appear on all the instances of the BIMKeeper application. (Due to" +
-        " copyright" +
-        " infringement I am not allowed to share any code or live project) ",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+        "This was the first project I developed that is still actively used today. It consists of a ticketing system that tracks all errors occurring across instances of the BIMKeeper application. This system allows IRP employees to have a real-time overview of all bugs and errors, enabling them to address issues consistently and effectively, ensuring customer satisfaction. ",
+    stack: [{ name: "Spring MVC" }, { name: "React" }, { name: "MariaDB" }],
     image: "/assets/work/ticketSystem.png",
     live: "",
     github: "",
   },
-  {
-    num: "03",
-    category: "School and hobby Projects",
-    title: "project 2",
-    description:
-        "In the first year of my eduction, had to follow several courses to get a grasp of webdevelopment history",
-    stack: [{ name: "HTML 5" }, { name: "CSS" }, { name: "MySql" }, { name: "Node.js" }],
-    image: "/assets/work/avontuurMobile1.png",
-    live: "",
-    github: "",
-  },
+  // {
+  //   num: "03",
+  //   category: "School and hobby Projects",
+  //   title: "project 2",
+  //   description:
+  //       "In the first year of my eduction, had to follow several courses to get a grasp of webdevelopment history",
+  //   stack: [{ name: "HTML 5" }, { name: "CSS" }, { name: "MySql" }, { name: "Node.js" }],
+  //   image: "/assets/work/avontuurMobile1.png",
+  //   live: "",
+  //   github: "",
+  // },
 ];
 
 const Work = () => {
@@ -114,31 +105,31 @@ const Work = () => {
                 {/* buttons */}
                 <div className="flex items-center gap-4">
                   {/* live project button */}
-                  <Link href={project.live}>
-                    <TooltipProvider delayDuration={100}>
-                      <Tooltip>
-                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>Live project</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </Link>
+                  {/*<Link href={project.live}>*/}
+                  {/*  <TooltipProvider delayDuration={100}>*/}
+                  {/*    <Tooltip>*/}
+                  {/*      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">*/}
+                  {/*        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />*/}
+                  {/*      </TooltipTrigger>*/}
+                  {/*      <TooltipContent>*/}
+                  {/*        <p>Live project</p>*/}
+                  {/*      </TooltipContent>*/}
+                  {/*    </Tooltip>*/}
+                  {/*  </TooltipProvider>*/}
+                  {/*</Link>*/}
                   {/* Github project button */}
-                  <Link href={project.github}>
-                    <TooltipProvider delayDuration={100}>
-                      <Tooltip>
-                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>Github repository</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </Link>
+                  {/*<Link href={project.github}>*/}
+                  {/*  <TooltipProvider delayDuration={100}>*/}
+                  {/*    <Tooltip>*/}
+                  {/*      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">*/}
+                  {/*        <BsGithub className="text-white text-3xl group-hover:text-accent" />*/}
+                  {/*      </TooltipTrigger>*/}
+                  {/*      <TooltipContent>*/}
+                  {/*        <p>Github repository</p>*/}
+                  {/*      </TooltipContent>*/}
+                  {/*    </Tooltip>*/}
+                  {/*  </TooltipProvider>*/}
+                  {/*</Link>*/}
                 </div>
               </div>
             </div>

@@ -30,7 +30,7 @@ const services = [
     title: "Long-term employment",
     description:
         "Depending on my current employment situation I am available to join your team as a full-stack" +
-        " developer. Please check out my resume or contact me to determine weather I'd be suiteble for the position" +
+        " developer. Please check out my resume or contact me to determine weather I'd be suitable for the position" +
         " you are trying to fill.",
     href: "",
   },

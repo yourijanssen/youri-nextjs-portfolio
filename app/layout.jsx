@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:card" content="assets/profilePic.png"/>
         <meta name="twitter:title" content={metadata.title}/>
         <meta name="twitter:description" content={metadata.description}/>
-        <meta name="twitter:image" content="assets/profilePic.png"/>
+        <meta name="twitter:image" content=""/>
 
         <link rel="canonical" href="https://yourijanssen.online"/>
         <link rel="icon" href="/favicon.ico"/>

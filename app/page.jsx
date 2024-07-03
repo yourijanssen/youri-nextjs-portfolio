@@ -2,7 +2,7 @@
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
-import Downloads, {CVDownload} from "@/components/Downloads";
+import {CVDownload} from "@/components/Downloads";
 
 const Home = () => {
 	return (
@@ -16,8 +16,7 @@ const Home = () => {
 							Hello I'm <br/> <span className="text-accent">Youri Janssen</span>
 						</h1>
 						<p className="max-w-[500px] mb-9 text-white/80">
-							Welcome to my portfolio page! Here you can find information about me and my projects. If you
-							have any questions or want to contact me, please visit the contact page.
+							Welcome to my portfolio page! Here you'll find information about me and my projects. If you have any questions or would like to get in touch, please visit the contact page.
 						</p>
 						{/* btn and socials */}
 						<div className="flex flex-col xl:flex-row items-center gap-8">
