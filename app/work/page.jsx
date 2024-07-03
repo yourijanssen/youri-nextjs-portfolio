@@ -25,7 +25,10 @@ const projects = [
     category: "BIM builder tool",
     title: "",
     description:
-        "This was my graduation project for my two-year Software Development program. BIM, or Building Information Modeling, is a process that involves generating and managing digital representations of the physical and functional characteristics of buildings and other physical assets. I developed a tool to make this process more accessible for the average customer of IRP.",
+        "This was my graduation project for my two-year Software Development program. BIM, or Building Information" +
+        " Modeling, is a process that involves generating and managing digital representations of the physical and" +
+        " functional characteristics of buildings and other physical assets. I developed a tool to make this process" +
+        " more accessible for the average customer of the product owner.",
     stack: [ { name: "Tailwind" }, { name: "Three" }, { name: "MongoDB" }],
     image: "/assets/work/bimBuilder.png",
     live: "",
@@ -36,7 +39,10 @@ const projects = [
     category: "Support Ticket System",
     title: "",
     description:
-        "This was the first project I developed that is still actively used today. It consists of a ticketing system that tracks all errors occurring across instances of the BIMKeeper application. This system allows IRP employees to have a real-time overview of all bugs and errors, enabling them to address issues consistently and effectively, ensuring customer satisfaction. ",
+        "This was the first project I developed that is still actively used today. It consists of a ticketing system" +
+        " that tracks all errors occurring across all the instances of the application. This system allows the" +
+        " employees to have a real-time overview of the bugs and errors, enabling them to address issues consistently" +
+        " and effectively, ensuring customer satisfaction. ",
     stack: [{ name: "Spring MVC" }, { name: "React" }, { name: "MariaDB" }],
     image: "/assets/work/ticketSystem.png",
     live: "",
