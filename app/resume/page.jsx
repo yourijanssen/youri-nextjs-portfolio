@@ -154,6 +154,41 @@ const education = {
 		},
 
 	],
+}
+
+
+// courses data
+const courses = {
+	icon: "/assets/resume/cap.svg",
+	title: "Favourite Courses",
+	description:
+		"I have compiled a comprehensive list of courses that have significantly contributed to my learning over the years.",
+	items: [
+		{
+			icon:"/assets/resume/courses/nextjs.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+		{
+			icon:"/assets/resume/courses/fluent.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+		{
+			icon:"/assets/resume/courses/18react.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+		{
+			icon:"/assets/resume/courses/security.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+	],
 };
 
 // skills data
@@ -543,6 +578,7 @@ import {TbBrandThreejs, TbFileTypeXml} from "react-icons/tb";
 import {BsAndroid, BsWindows} from "react-icons/bs";
 import {PiMicrosoftTeamsLogo} from "react-icons/pi";
 import {BiTerminal} from "react-icons/bi";
+import Image from "next/image";
 
 const Resume = () => {
 	return (
@@ -561,9 +597,10 @@ const Resume = () => {
 				>
 					<TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
 						<TabsTrigger value="experience">Experience</TabsTrigger>
+						<TabsTrigger value="about">About me</TabsTrigger>
 						<TabsTrigger value="education">Education</TabsTrigger>
 						<TabsTrigger value="skills">Skills</TabsTrigger>
-						<TabsTrigger value="about">About me</TabsTrigger>
+						<TabsTrigger value="courses">Favourite courses</TabsTrigger>
 					</TabsList>
 
 					{/* content */}
@@ -634,6 +671,33 @@ const Resume = () => {
 								</ScrollArea>
 							</div>
 						</TabsContent>
+
+						{/* Favourite Courses */}
+						<TabsContent value="courses" className="w-full">
+							<div className="flex flex-col gap-[30px] text-center xl:text-left">
+								<h3 className="text-4xl font-bold">{courses.title}</h3>
+								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+									{courses.description}
+								</p>
+								<ScrollArea className="h-[400px]">
+									<ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+										{courses.items.map((item, index) => {
+											return (
+												<li
+													key={index}
+													className="bg-[#232329] h-[300px] py-6 px-10 rounded-xl flex flex-col lg:items-start gap-1"
+												>
+													<div className="flex flex-col xl:flex-row items-center gap-8">
+														<Image src={item.icon} alt="" width="196" height="257" className="items-center"/>
+													</div>
+												</li>
+											);
+										})}
+									</ul>
+								</ScrollArea>
+							</div>
+						</TabsContent>
+
 
 
 						{/* skills */}
