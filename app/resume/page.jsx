@@ -100,7 +100,7 @@ const experience = {
 	icon: "/assets/resume/badge.svg",
 	title: "My experience",
 	description:
-		"Here you can find all the relevant work experiences I've had so far.",
+		"Here is a list of all the relevant work experiences I've had so far:",
 	items: [
 		{
 			company: "Freelancer: Custom web pages",
@@ -109,7 +109,7 @@ const experience = {
 		},
 		{
 			company: "IRP/BIMKeeper: Web-based building management system",
-			position: "Intern",
+			position: "Full-stack Developer",
 			duration: "2023 - Present",
 		},
 
@@ -121,7 +121,7 @@ const education = {
 	icon: "/assets/resume/cap.svg",
 	title: "My education",
 	description:
-		"Here you can find all the relevant eduction I've had so far.",
+		"Here is a list of all my official eduction degree's I've obtained so far:",
 	items: [
 		{
 			institution: "Amsterdam University of Applied Sciences",
@@ -162,19 +162,19 @@ const courses = {
 	icon: "/assets/resume/cap.svg",
 	title: "Favourite Courses",
 	description:
-		"I have compiled a comprehensive list of courses that have significantly contributed to my learning over the years.",
+		"Here is a comprehensive list of courses that have significantly contributed to my learning over the years:",
 	items: [
 		{
 			icon:"/assets/resume/courses/nextjs.png",
 			name:"Fluent React",
 			year: "2024",
-			link:""
+			link:"https://www.oreilly.com/library/view/nextjs-from-scratch/9781836207979/"
 		},
 		{
 			icon:"/assets/resume/courses/fluent.png",
 			name:"Fluent React",
 			year: "2024",
-			link:""
+			link:"https://www.oreilly.com/library/view/fluent-react/9781098138707/"
 		},
 		{
 			icon:"/assets/resume/courses/18react.png",
@@ -188,6 +188,80 @@ const courses = {
 			year: "2024",
 			link:""
 		},
+		{
+			icon:"/assets/resume/courses/jakarta.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+		{
+			icon:"/assets/resume/courses/reactmaxi.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+		{
+			icon:"/assets/resume/courses/architecture.png",
+			name:"Fluent React",
+			year: "2024",
+			link:"https://learning.oreilly.com/library/view/software-architecture-patterns/9781491971437/"
+		},
+		{
+			icon:"/assets/resume/courses/devops.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+		{
+			icon:"/assets/resume/courses/networking.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+		{
+			icon:"/assets/resume/courses/uml.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+		{
+			icon:"/assets/resume/courses/angular.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+		{
+			icon:"/assets/resume/courses/nodejs.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+		{
+			icon:"/assets/resume/courses/modernjavascript.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+		{
+			icon:"/assets/resume/courses/mysql.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+		{
+			icon:"/assets/resume/courses/javascript.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+		{
+			icon:"/assets/resume/courses/htmlcss.png",
+			name:"Fluent React",
+			year: "2024",
+			link:""
+		},
+
+
 	],
 };
 
@@ -195,7 +269,7 @@ const courses = {
 const skills = {
 	title: "My skills",
 	description:
-		"Here I listed all the relevant skills I've obtained so far, seperated by time periods of 1 year each.",
+		"Here is a list of all the relevant skills I have acquired, categorized by each year:",
 	year: "2022",
 	skillList: [
 		{
