@@ -19,6 +19,7 @@ export const metadata = {
   title: "Youri Janssen",
   description: "Youri Janssen Portfolio Full Stack Developer React Youri YWM Janssen Amsterdam Utrecht Custom" +
       " Website Building .online .nl",
+  icon: "favicon.ico",
 };
 
 export default function RootLayout({ children }) {
@@ -44,7 +45,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content=""/>
 
         <link rel="canonical" href="https://yourijanssen.online"/>
-        <link rel="icon" href="/app/favicon.ico"/>
+        <link rel="icon" href="/app/favicon.ico?v=2"/>
       </head>
         <Analytics/>
         <SpeedInsights/>
