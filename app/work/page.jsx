@@ -26,7 +26,7 @@ const projects = [
     title: "",
     description:
         "This was my graduation project for my two-year Software Development program. BIM, or Building Information Modeling, is a process that involves generating and managing digital representations of the physical and functional characteristics of buildings and other physical assets. I developed a tool to make this process more accessible for the average customer of IRP.",
-    stack: [{ name: "Spring MVC" }, { name: "Tailwind" }, { name: "Three" }, { name:"React" }, { name: "MongoDB" }],
+    stack: [ { name: "Tailwind" }, { name: "Three" }, { name: "MongoDB" }],
     image: "/assets/work/bimBuilder.png",
     live: "",
     github: "",
@@ -89,7 +89,7 @@ const Work = () => {
                 {/* project description */}
                 <p className="text-white/60">{project.description}</p>
                 {/* stack */}
-                <ul className="flex gap-4">
+                <ul className="flex gap-3">
                   {project.stack.map((item, index) => {
                     return (
                         <li key={index} className="text-xl text-accent">
