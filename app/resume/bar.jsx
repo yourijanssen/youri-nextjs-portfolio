@@ -25,114 +25,85 @@ const backend = {
 	datasets: [{
 		label: '# of Votes',
 		data: [4, 5, 12, 20, 20, 13, 5],
-		backgroundColor: [
-			'rgba(255, 99, 132, 0.2)',
-			'rgba(54, 162, 235, 0.2)',
-			'rgba(255, 206, 86, 0.2)',
-			'rgba(75, 192, 192, 0.2)',
-			'rgba(153, 102, 255, 0.2)',
-			'rgba(255, 159, 64, 0.2)'
-		],
-		borderColor: [
-			'rgba(255, 99, 132, 1)',
-			'rgba(54, 162, 235, 1)',
-			'rgba(255, 206, 86, 1)',
-			'rgba(75, 192, 192, 1)',
-			'rgba(153, 102, 255, 1)',
-			'rgba(255, 159, 64, 1)'
-		],
+		backgroundColor: '#189EDA', // Single color for all bars
+		borderColor: '#189EDA',
 		borderWidth: 1
 	}]
 };
 
 const frontend = {
-	labels: ['Stylus',  'Next', 'React', 'Angular', 'Type/Javascript', 'CSS', 'Tailwind', 'Three.js' ],
+	labels: ['Stylus', 'Next', 'React', 'Angular', 'Type/Javascript', 'CSS', 'Tailwind', 'Three.js'],
 	datasets: [{
 		label: '# of Votes',
-		data: [4, 5, 15, 20, 20, 19, 5, 5],
-		backgroundColor: [
-			'rgba(255, 99, 132, 0.2)',
-			'rgba(54, 162, 235, 0.2)',
-			'rgba(255, 206, 86, 0.2)',
-			'rgba(75, 192, 192, 0.2)',
-			'rgba(153, 102, 255, 0.2)',
-			'rgba(255, 159, 64, 0.2)'
-		],
-		borderColor: [
-			'rgba(255, 99, 132, 1)',
-			'rgba(54, 162, 235, 1)',
-			'rgba(255, 206, 86, 1)',
-			'rgba(75, 192, 192, 1)',
-			'rgba(153, 102, 255, 1)',
-			'rgba(255, 159, 64, 1)'
-		],
-		borderWidth: 1
-	}]
-};
-
-const overlapping = {
-	labels: ['Next', 'React', 'Angular', 'Tailwind', 'CSS',],
-	datasets: [{
-		label: '# of Votes',
-		data: [12, 19, 3, 5, 2, 3],
-		backgroundColor: [
-			'rgba(255, 99, 132, 0.2)',
-			'rgba(54, 162, 235, 0.2)',
-			'rgba(255, 206, 86, 0.2)',
-			'rgba(75, 192, 192, 0.2)',
-			'rgba(153, 102, 255, 0.2)',
-			'rgba(255, 159, 64, 0.2)'
-		],
-		borderColor: [
-			'rgba(255, 99, 132, 1)',
-			'rgba(54, 162, 235, 1)',
-			'rgba(255, 206, 86, 1)',
-			'rgba(75, 192, 192, 1)',
-			'rgba(153, 102, 255, 1)',
-			'rgba(255, 159, 64, 1)'
-		],
+		data: [4, 5, 19, 20, 20, 19, 5, 5],
+		backgroundColor: '#189EDA', // Single color for all bars
+		borderColor: '#189EDA',
 		borderWidth: 1
 	}]
 };
 
 const options = {
-	maintainAspectRatio: false, // Set to false to fix the height
+	maintainAspectRatio: false,
 	plugins: {
 		legend: {
 			display: true,
 			position: 'top',
-		}
+			labels: {
+				font: {
+					size: 14,
+				},
+			},
+		},
 	},
 	animation: {
-		duration: 2000, // general animation time
+		duration: 2000,
 		easing: 'easeInOutQuad',
 		animateRotate: true,
 		animateScale: true,
-	}
+	},
+	scales: {
+		x: {
+			grid: {
+				color: '#1C1C22',
+			},
+			ticks: {
+				font: {
+					size: 14,
+				},
+			},
+		},
+		y: {
+			grid: {
+				color: '#E0E0E0',
+				lineWidth: 1,
+			},
+			ticks: {
+				font: {
+					size: 14,
+				},
+				beginAtZero: true,
+			},
+		},
+	},
 };
 
 const BarExample = () => (
-		<>
-			<div>
+	<>
+		<div style={{maxWidth: '800px'}}>
+			<div style={{marginBottom: '20px'}}>
 				<h2>Current Backend Skills:</h2>
-				<div style={{maxWidth: '700px', height: '200px'}}>
-					<Bar
-						data={backend}
-						options={options}
-					/>
+				<div style={{height: '300px'}}>
+					<Bar data={backend} options={options}/>
 				</div>
 			</div>
 			<div>
-				<h2>Current Frontend Skills:</h2>
-				<div style={{maxWidth: '700px', height: '200px'}}>
-					<Bar
-						data={frontend}
-						options={options}
-					/>
+				<h2>Current Frontend Skills</h2>
+				<div style={{height: '300px'}}>
+					<Bar data={frontend} options={options}/>
 				</div>
 			</div>
-		</>
-	)
-;
+		</div>
+	</>
+);
 
 export default BarExample;
