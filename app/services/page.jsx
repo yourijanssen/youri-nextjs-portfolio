@@ -8,13 +8,14 @@ const services = [
     num: "01",
     title: "Custom Website Development",
     description:
-        "I can build custom web pages like this one for you. There wil be an initial building cost and maintenance" +
-        " fee, depending on the amount of work it takes." +
-        " This" +
-        " includes a domain name" +
-        " of your choice, an e-mail service - so customers can reach you" +
-        " via the contact page - and a tool to track the traffic and performance of your webpage. I will propose" +
-        " some existing designs for you and you may choose the one that suits your taste.",
+        `I offer custom web page development services tailored to your needs. My services include:
+      
+      - Initial construction costs and maintenance fees based on the complexity of the project.
+      - A domain name of your choice.
+      - An email service for customer inquiries via the contact page.
+      - Tools to track traffic and website performance.
+      
+      Additionally, I will provide you with several design proposals so you can select the one that best suits your taste.`,
     href: "",
   },
   {

@@ -165,100 +165,100 @@ const courses = {
 		"Here is a comprehensive list of courses that have significantly contributed to my learning over the years:",
 	items: [
 		{
-			icon:"/assets/resume/courses/nextjs.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/nextjs.png",
+			name: "Fluent React",
 			year: "2024",
-			link:"https://www.oreilly.com/library/view/nextjs-from-scratch/9781836207979/"
+			link: "https://www.oreilly.com/library/view/nextjs-from-scratch/9781836207979/"
 		},
 		{
-			icon:"/assets/resume/courses/fluent.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/fluent.png",
+			name: "Fluent React",
 			year: "2024",
-			link:"https://www.oreilly.com/library/view/fluent-react/9781098138707/"
+			link: "https://www.oreilly.com/library/view/fluent-react/9781098138707/"
 		},
 		{
-			icon:"/assets/resume/courses/18react.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/18react.png",
+			name: "Fluent React",
 			year: "2024",
-			link:""
+			link: ""
 		},
 		{
-			icon:"/assets/resume/courses/security.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/security.png",
+			name: "Fluent React",
 			year: "2024",
-			link:""
+			link: ""
 		},
 		{
-			icon:"/assets/resume/courses/jakarta.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/jakarta.png",
+			name: "Fluent React",
 			year: "2024",
-			link:""
+			link: ""
 		},
 		{
-			icon:"/assets/resume/courses/reactmaxi.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/reactmaxi.png",
+			name: "Fluent React",
 			year: "2024",
-			link:""
+			link: ""
 		},
 		{
-			icon:"/assets/resume/courses/architecture.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/architecture.png",
+			name: "Fluent React",
 			year: "2024",
-			link:"https://learning.oreilly.com/library/view/software-architecture-patterns/9781491971437/"
+			link: "https://learning.oreilly.com/library/view/software-architecture-patterns/9781491971437/"
 		},
 		{
-			icon:"/assets/resume/courses/devops.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/devops.png",
+			name: "Fluent React",
 			year: "2024",
-			link:""
+			link: ""
 		},
 		{
-			icon:"/assets/resume/courses/networking.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/networking.png",
+			name: "Fluent React",
 			year: "2024",
-			link:""
+			link: ""
 		},
 		{
-			icon:"/assets/resume/courses/uml.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/uml.png",
+			name: "Fluent React",
 			year: "2024",
-			link:""
+			link: ""
 		},
 		{
-			icon:"/assets/resume/courses/angular.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/angular.png",
+			name: "Fluent React",
 			year: "2024",
-			link:""
+			link: ""
 		},
 		{
-			icon:"/assets/resume/courses/nodejs.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/nodejs.png",
+			name: "Fluent React",
 			year: "2024",
-			link:""
+			link: ""
 		},
 		{
-			icon:"/assets/resume/courses/modernjavascript.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/modernjavascript.png",
+			name: "Fluent React",
 			year: "2024",
-			link:""
+			link: ""
 		},
 		{
-			icon:"/assets/resume/courses/mysql.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/mysql.png",
+			name: "Fluent React",
 			year: "2024",
-			link:""
+			link: ""
 		},
 		{
-			icon:"/assets/resume/courses/javascript.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/javascript.png",
+			name: "Fluent React",
 			year: "2024",
-			link:""
+			link: ""
 		},
 		{
-			icon:"/assets/resume/courses/htmlcss.png",
-			name:"Fluent React",
+			icon: "/assets/resume/courses/htmlcss.png",
+			name: "Fluent React",
 			year: "2024",
-			link:""
+			link: ""
 		},
 
 
@@ -268,8 +268,10 @@ const courses = {
 // skills data
 const skills = {
 	title: "My skills",
-	description:
-		"Here is a list of all the relevant skills I have acquired, categorized by each year:",
+	description1:
+		"I've compared the most crucial developer skills I've worked with before alongside my honest opinion of my proficiency in each:",
+	description2:
+		"Here is a list of all skills I have acquired so far, categorized by each year:",
 	year: "2022",
 	skillList: [
 		{
@@ -647,12 +649,14 @@ import {DegreeDownload} from "@/components/Downloads";
 import {VscVscode} from "react-icons/vsc";
 import {DiIntellij, DiLinux, DiMongodb, DiScrum} from "react-icons/di";
 import {GrMysql} from "react-icons/gr";
-import { GiJasmine} from "react-icons/gi";
+import {GiJasmine} from "react-icons/gi";
 import {TbBrandThreejs, TbFileTypeXml} from "react-icons/tb";
 import {BsAndroid, BsWindows} from "react-icons/bs";
 import {PiMicrosoftTeamsLogo} from "react-icons/pi";
 import {BiTerminal} from "react-icons/bi";
 import Image from "next/image";
+import BarExample from "@/app/resume/bar";
+import {useEffect, useState} from "react";
 
 const Resume = () => {
 	return (
@@ -762,7 +766,8 @@ const Resume = () => {
 													className="bg-[#232329] h-[300px] py-6 px-10 rounded-xl flex flex-col lg:items-start gap-1"
 												>
 													<div className="flex flex-col xl:flex-row items-center gap-8">
-														<Image src={item.icon} alt="" width="196" height="257" className="items-center"/>
+														<Image src={item.icon} alt="" width="196" height="257"
+															   className="items-center"/>
 													</div>
 												</li>
 											);
@@ -773,18 +778,20 @@ const Resume = () => {
 						</TabsContent>
 
 
-
 						{/* skills */}
 						<TabsContent value="skills" className="w-full h-full">
 							<div className="flex flex-col gap-[30px]">
 								<div className="flex flex-col gap-[30px] text-center xl:text-left">
 									<h3 className="text-4xl font-bold">{skills.title}</h3>
 									<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-										{skills.description}
+										{skills.description1}
 									</p>
+									<BarExample/>
 								</div>
 
-
+								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+									{skills.description2}
+								</p>
 								{Object.keys(skillsByYear).sort((a, b) => b - a).map((year) => (
 									<div key={year} className="mb-8">
 										<h3 className="text-2xl mb-4">{year}</h3>
@@ -820,9 +827,8 @@ const Resume = () => {
 						>
 							<div className="flex flex-col gap-[30px]">
 								<h3 className="text-4xl font-bold">{about.title}</h3>
-								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-									{about.description}
-								</p>
+								{/* Typist component for animated description */}
+								<TypingAnimation text={about.description} />
 								<ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
 									{about.info.map((item, index) => {
 										return (
@@ -842,6 +848,33 @@ const Resume = () => {
 				</Tabs>
 			</div>
 		</motion.div>
+	);
+};
+
+export const TypingAnimation = ({ text }) => {
+	const [displayText, setDisplayText] = useState('');
+	const [currentIndex, setCurrentIndex] = useState(0);
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			// Get the current character to display
+			const currentChar = text.slice(0, currentIndex + 1);
+			setDisplayText(currentChar);
+
+			// Move to the next character
+			setCurrentIndex(currentIndex => currentIndex + 1);
+
+			// Clear interval when all characters are displayed
+			if (currentChar === text) {
+				clearInterval(interval);
+			}
+		}, 1); // Typing speed (adjust as needed)
+
+		return () => clearInterval(interval);
+	}, [text, currentIndex]);
+
+	return (
+		<span>{displayText}</span>
 	);
 };
 
