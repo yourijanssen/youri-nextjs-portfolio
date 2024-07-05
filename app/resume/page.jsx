@@ -868,7 +868,7 @@ export const TypingAnimation = ({ text }) => {
 			if (currentChar === text) {
 				clearInterval(interval);
 			}
-		}, 1); // Typing speed (adjust as needed)
+		}, 3); // Typing speed (adjust as needed)
 
 		return () => clearInterval(interval);
 	}, [text, currentIndex]);
