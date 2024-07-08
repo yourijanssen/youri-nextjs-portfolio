@@ -46,17 +46,17 @@ const MobileNav = () => {
             <CiMenuFries className="text-[32px] text-accent" />
           </button>
         </SheetTrigger>
-        <SheetContent className="flex flex-col">
+        <SheetContent className="flex flex-col bg-primary-light dark:bg-primary-dark">
           {/* logo */}
-          <div className="mt-32 mb-40 text-center text-2xl">
+          <div className="mt-32 mb-40 text-center text-2xl bg-light dark:bg-dark">
             <Link href="/">
-              <h1 className="text-4xl font-semibold" onClick={closeSheet}>
+              <h1 className="text-4xl font-semibold text-text-light dark:text-text-dark" onClick={closeSheet}>
                 Youri<span className="text-accent">.</span>
               </h1>
             </Link>
           </div>
           {/* nav */}
-          <nav className="flex flex-col justify-center items-center gap-8">
+          <nav className="flex flex-col justify-center items-center gap-8 text-text-light dark:text-text-dark">
             {links.map((link, index) => (
                 <Link
                     href={link.path}
