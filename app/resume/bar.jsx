@@ -91,13 +91,13 @@ const BarExample = () => (
 	<>
 		<div style={{maxWidth: '800px'}}>
 			<div style={{marginBottom: '20px'}}>
-				<h2>Current Backend Skills:</h2>
+				<h2 className="text-text-light dark:text-text-dark">Current Backend Skills:</h2>
 				<div style={{height: '300px'}}>
 					<Bar data={backend} options={options}/>
 				</div>
 			</div>
 			<div>
-				<h2>Current Frontend Skills</h2>
+				<h2 className="text-text-light dark:text-text-dark">Current Frontend Skills</h2>
 				<div style={{height: '300px'}}>
 					<Bar data={frontend} options={options}/>
 				</div>

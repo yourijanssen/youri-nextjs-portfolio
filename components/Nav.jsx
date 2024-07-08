@@ -29,7 +29,7 @@ const links = [
 const Nav = () => {
   const pathname = usePathname();
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-8 text-text-light dark:text-text-dark">
       {links.map((link, index) => {
         return (
           <Link

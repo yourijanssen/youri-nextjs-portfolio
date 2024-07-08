@@ -24,13 +24,19 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#1c1c22", // Extend or override default color palette
+        primary: {
+          light: "#ffffff", // Light mode primary color
+          dark: "#1c1c22", // Dark mode primary color
+        },
         accent: {
-          DEFAULT: "#189EDA", // Define custom color and its hover state
-          hover: "#29B6F6",
+          DEFAULT: "#189EDA", // Default accent color
+          hover: "#29B6F6", // Hover state for accent color
+        },
+        text: {
+          light: "#000000", // Light mode text color
+          dark: "#ffffff", // Dark mode text color
         },
       },
-
       keyframes: {
         "accordion-down": { // Define custom keyframes for animations
           from: { height: "0" },

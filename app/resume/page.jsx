@@ -657,6 +657,7 @@ import {BiTerminal} from "react-icons/bi";
 import Image from "next/image";
 import BarExample from "@/app/resume/bar";
 import {useEffect, useState} from "react";
+import TypingAnimation from "@/components/TypingAnimation";
 
 const Resume = () => {
 	return (
@@ -686,8 +687,8 @@ const Resume = () => {
 						{/* experience */}
 						<TabsContent value="experience" className="w-full">
 							<div className="flex flex-col gap-[30px] text-center xl:text-left">
-								<h3 className="text-4xl font-bold">{experience.title}</h3>
-								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+								<h3 className="text-4xl font-bold text-text-light dark:text-text-dark">{experience.title}</h3>
+								<p className="max-w-[600px] text-text-light dark:text-text-dark mx-auto xl:mx-0">
 									{experience.description}
 								</p>
 								<ScrollArea className="h-[400px]">
@@ -696,16 +697,16 @@ const Resume = () => {
 											return (
 												<li
 													key={index}
-													className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+													className="dark:bg-[#232329] bg-[#CCCCCC] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 "
 												>
 													<span className="text-accent">{item.duration}</span>
-													<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+													<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left text-text-light/80 dark:text-text-dark">
 														{item.position}
 													</h3>
 													<div className="flex items-center gap-3">
 														{/* dot */}
 														<span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-														<p className="text-white/60">{item.company}</p>
+														<p className="text-text-light/80 dark:text-text-dark/60">{item.company}</p>
 													</div>
 												</li>
 											);
@@ -718,8 +719,8 @@ const Resume = () => {
 						{/* education */}
 						<TabsContent value="education" className="w-full">
 							<div className="flex flex-col gap-[30px] text-center xl:text-left">
-								<h3 className="text-4xl font-bold">{education.title}</h3>
-								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+								<h3 className="text-4xl font-bold text-text-light dark:text-text-dark">{education.title}</h3>
+								<p className="max-w-[600px] text-text-light dark:text-text-dark mx-auto xl:mx-0">
 									{education.description}
 								</p>
 								<ScrollArea className="h-[400px]">
@@ -728,16 +729,16 @@ const Resume = () => {
 											return (
 												<li
 													key={index}
-													className="bg-[#232329] h-[300px] py-6 px-10 rounded-xl flex flex-col justify-start items-start lg:items-start gap-1"
+													className="dark:bg-[#232329] bg-[#CCCCCC] h-[300px] py-6 px-10 rounded-xl flex flex-col justify-start items-start lg:items-start gap-1"
 												>
 													<span className="text-accent">{item.duration}</span>
-													<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+													<h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left text-text-light/80 dark:text-text-dark">
 														{item.degree}
 													</h3>
 													<div className="flex items-center gap-3">
 														{/* dot */}
 														<span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-														<p className="text-white/60">{item.institution}</p>
+														<p className="text-text-light/80 dark:text-text-dark/60">{item.institution}</p>
 													</div>
 													<div className="flex flex-col xl:flex-row items-center gap-8">
 														<DegreeDownload url={item.file}/>
@@ -753,8 +754,8 @@ const Resume = () => {
 						{/* Favourite Courses */}
 						<TabsContent value="courses" className="w-full">
 							<div className="flex flex-col gap-[30px] text-center xl:text-left">
-								<h3 className="text-4xl font-bold">{courses.title}</h3>
-								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+								<h3 className="text-4xl font-bold text-text-light dark:text-text-dark">{courses.title}</h3>
+								<p className="max-w-[600px] text-text-light dark:text-text-dark mx-auto xl:mx-0">
 									{courses.description}
 								</p>
 								<ScrollArea className="h-[400px]">
@@ -763,7 +764,7 @@ const Resume = () => {
 											return (
 												<li
 													key={index}
-													className="bg-[#232329] h-[300px] py-6 px-10 rounded-xl flex flex-col lg:items-start gap-1"
+													className="dark:bg-[#232329] bg-[#CCCCCC] h-[300px] py-6 px-10 rounded-xl flex flex-col lg:items-start gap-1"
 												>
 													<div className="flex flex-col xl:flex-row items-center gap-8">
 														<Image src={item.icon} alt="" width="196" height="257"
@@ -782,30 +783,32 @@ const Resume = () => {
 						<TabsContent value="skills" className="w-full h-full">
 							<div className="flex flex-col gap-[30px]">
 								<div className="flex flex-col gap-[30px] text-center xl:text-left">
-									<h3 className="text-4xl font-bold">{skills.title}</h3>
-									<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+									<h3 className="text-4xl font-bold text-text-light dark:text-text-dark">{skills.title}</h3>
+									<p className="max-w-[600px] text-text-light dark:text-text-dark mx-auto xl:mx-0">
 										{skills.description1}
 									</p>
 									<BarExample/>
 								</div>
 
-								<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+								<p className="max-w-[600px] text-text-light dark:text-text-dark mx-auto xl:mx-0">
 									{skills.description2}
 								</p>
 								{Object.keys(skillsByYear).sort((a, b) => b - a).map((year) => (
 									<div key={year} className="mb-8">
-										<h3 className="text-2xl mb-4">{year}</h3>
-										<ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+										<h3 className="text-2xl mb-4 text-text-light dark:text-text-dark">{year}</h3>
+										<ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px] ">
 											{skillsByYear[year].map((skill, index) => (
 												<li key={index} onClick={() => handleSkillClick(skill.link)}>
 													<TooltipProvider delayDuration={100}>
 														<Tooltip>
 															<TooltipTrigger
-																className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+																className="w-full h-[150px] rounded-xl flex flex-col justify-center items-center group dark:bg-[#232329] bg-[#CCCCCC] text-text-light dark:text-text-dark"
+															>
 																<div
 																	className="text-6xl group-hover:text-accent transition-all duration-300">
 																	{skill.icon}
 																</div>
+																<p className="mt-2 text-center capitalize">{skill.name}</p> {/* Added skill name */}
 															</TooltipTrigger>
 															<TooltipContent>
 																<p className="capitalize">{skill.name}</p>
@@ -826,9 +829,9 @@ const Resume = () => {
 							className="w-full text-center xl:text-left"
 						>
 							<div className="flex flex-col gap-[30px]">
-								<h3 className="text-4xl font-bold">{about.title}</h3>
+								<h3 className="text-4xl font-bold text-text-light dark:text-text-dark">{about.title}</h3>
 								{/* Typist component for animated description */}
-								<TypingAnimation text={about.description} />
+								<TypingAnimation text={about.description}/>
 								<ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
 									{about.info.map((item, index) => {
 										return (
@@ -836,8 +839,9 @@ const Resume = () => {
 												key={index}
 												className="flex items-center justify-center xl:justify-start gap-4"
 											>
-												<span className="text-white/60">{item.fieldName}</span>
-												<span className="text-xl">{item.fieldValue}</span>
+												<span
+													className="text-text-light/60 dark:text-text-dark/60">{item.fieldName}:</span>
+												<span className="text-xl text-text-light dark:text-text-dark">{item.fieldValue}</span>
 											</li>
 										);
 									})}
@@ -848,33 +852,6 @@ const Resume = () => {
 				</Tabs>
 			</div>
 		</motion.div>
-	);
-};
-
-export const TypingAnimation = ({ text }) => {
-	const [displayText, setDisplayText] = useState('');
-	const [currentIndex, setCurrentIndex] = useState(0);
-
-	useEffect(() => {
-		const interval = setInterval(() => {
-			// Get the current character to display
-			const currentChar = text.slice(0, currentIndex + 1);
-			setDisplayText(currentChar);
-
-			// Move to the next character
-			setCurrentIndex(currentIndex => currentIndex + 1);
-
-			// Clear interval when all characters are displayed
-			if (currentChar === text) {
-				clearInterval(interval);
-			}
-		}, 3); // Typing speed (adjust as needed)
-
-		return () => clearInterval(interval);
-	}, [text, currentIndex]);
-
-	return (
-		<span>{displayText}</span>
 	);
 };
 

@@ -32,15 +32,15 @@ const Stats = () => {
                   end={item.num}
                   duration={5}
                   delay={2}
-                  className="text-4xl xl:text-6xl font-extrabold"
+                  className="text-4xl xl:text-6xl font-extrabold text-text-light dark:text-text-dark"
                 />
-                <p
+                <t
                   className={`${
                     item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
-                  } leading-snug text-white/80`}
+                  } leading-snug text-text-light dark:text-text-dark`}
                 >
                   {item.text}
-                </p>
+                </t>
               </div>
             );
           })}

@@ -2,7 +2,16 @@
 
 import {BsArrowDownRight} from "react-icons/bs";
 import Link from "next/link";
+import {motion} from "framer-motion";
 
+
+/**
+ * Array containing service objects with details.
+ * @property {string} num - Service number.
+ * @property {string} title - Title of the service.
+ * @property {string} description - Description of the service.
+ * @property {string} href - Link URL for the service.
+ */
 const services = [
 	{
 		num: "01",
@@ -34,8 +43,11 @@ const services = [
 	},
 ];
 
-import {motion} from "framer-motion";
-
+/**
+ * Services component displays a list of services with titles, descriptions, and links.
+ *
+ * @returns {JSX.Element} Services component.
+ */
 const Services = () => {
 	return (
 		<section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
@@ -57,25 +69,25 @@ const Services = () => {
 								{/* top */}
 								<div className="w-full flex justify-between items-center">
 									<div
-										className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
+										className="text-5xl font-extrabold text-text-light dark:text-text-dark">
 										{service.num}
 									</div>
-									<Link
-										href={service.href}
-										className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
-									>
-										<BsArrowDownRight className="text-primary text-3xl"/>
-									</Link>
+									{/*<Link*/}
+									{/*	href={service.href}*/}
+									{/*	className="w-[70px] h-[70px] rounded-full b dark:bg-light group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"*/}
+									{/*>*/}
+									{/*	<BsArrowDownRight className="text-primary text-3xl"/>*/}
+									{/*</Link>*/}
 								</div>
 								{/* title */}
-								<h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+								<h2 className="text-[42px] font-bold leading-none text-text-light dark:text-text-dark">
 									{service.title}
 								</h2>
 								{/* description */}
-								<p className="text-white/60"
+								<p className="text-text-light/60 dark:text-text-dark/60"
 								   dangerouslySetInnerHTML={{__html: service.description}}></p>
 								{/* border */}
-								<div className="border-b border-white/20 w-full"></div>
+								<div className="border-b border-dark/80 dark:border-light/80 w-full"></div>
 							</div>
 						);
 					})}
